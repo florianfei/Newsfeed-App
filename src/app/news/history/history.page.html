@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title><strong>History</strong></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/news"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content *ngIf="!isLoading">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="10" offset-sm="1" size-md="6" offset-md="3">
+        <ion-item
+          *ngFor="let article of recentArticles"
+          [routerLink]="['/news', article.id]"
+          detail
+        >
+          <ion-thumbnail position="start" *ngIf="article?.imageUrl">
+            <ion-img [src]="article?.imageUrl"></ion-img>
+          </ion-thumbnail>
+          <ion-label class="ion-margin">
+            <h4 class="ion-text-wrap"><strong>{{ article?.title }}</strong></h4>
+            <p>{{ article?.publishedDate }}<br>{{ article?.category }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

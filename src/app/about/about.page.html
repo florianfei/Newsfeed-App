@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-slides class="slides-content" [pager]="false">
+    <ion-slide>
+      <div class="slide">
+        <ion-img src="assets/icon/news.png" class="digi-logo"></ion-img>
+        <h1>Welcome to using DigiNewsfeed</h1>
+        <p>
+          This app displays news articles of various topics. The interface allows you to filter by the five categories
+          and read news articles on these various topics. The app also includes the options to rate and comment on articles.
+          Other information such as the most recently viewed five articles, the assigned user ID and the privacy policy
+          can be accessed via the menu in the top left corner of the toolbar.
+        </p>
+        <p>
+          New articles will be published every day; the app will notify you when new articles are released.
+          To manually see and check whether new articles are available, the list of available articles can be refreshed
+          with a pull-down gesture on the content area of the main interface.
+        </p>
+        <ion-button fill="clear" (click)="navigateBack()">Return to main view!</ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

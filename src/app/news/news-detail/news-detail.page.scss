@@ -1,0 +1,65 @@
+.a-title {
+  margin: 0;
+}
+
+.a-img {
+  border-radius: 1%;
+}
+
+.a-info {
+  margin: 0;
+}
+
+.a-meta {
+  margin-left: 4px;
+}
+
+.a-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+
+.a-separator {
+  background: var(--ion-color-primary);
+  height: 2px;
+  margin: 0;
+}
+
+.a-separator-comment {
+  margin: 0;
+  height: 1px;
+  background: var(--ion-color-medium);
+}
+
+.a-comment-card {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.a-comment-content {
+  padding-bottom: 0;
+}
+
+.a-comment-text {
+  color: var(--ion-color-primary);
+}
+
+.a-comment-user {
+  font-style: italic;
+}
+
+.a-rating {
+  margin-right: 4px;
+}
+
+.a-rating-btn {
+  margin-left: 6px;
+}
+
+.ion-page {
+  padding: 50px;
+  background: rgba(0,0,0,0.5);
+}
+

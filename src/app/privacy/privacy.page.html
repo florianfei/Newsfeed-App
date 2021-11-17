@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-slides class="slides-content" [pager]="false">
+    <ion-slide>
+      <div class="slide">
+        <h1>Privacy statement</h1>
+        <p>
+          The mobile application does not collect and store any personal
+          information, neither user-specific information (e.g., name, email
+          address) or device-specific information (e.g., phone number, device
+          id, geolocation). The app also does not require any log-in. Each user
+          (i.e., a participant of the user study) is assigned a unique
+          identifier on first start-up of the app to associate the collected
+          data to individual participants. Since the app requires push
+          notifications, we will use, the Firebase Cloud Messaging (FCM) token
+          as the unique identifier. No data collected for the purpose of the
+          study (e.g., what news article a user has read and for how long) do
+          pose any privacy risk to the users. All data will be stored in a
+          central server hosting a database. Only PI and co-PIs will have access
+          to the data. We use secure protocols (HTTPS) to transfer data between
+          mobile application and server. After the study, we will archive the
+          data on a machine that has no public access.
+        </p>
+        <ion-button fill="clear" (click)="navigateBack()"
+          >Return to list view!</ion-button
+        >
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

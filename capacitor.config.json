@@ -1,0 +1,18 @@
+{
+  "appId": "edu.nus.newsfeed",
+  "appName": "DigiNewsfeed",
+  "bundledWebRuntime": false,
+  "linuxAndroidStudioPath": "/opt/android-studio-4.2/android-studio/bin/studio.sh",
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "backgroundColor": "#ffffffff",
+      "androidScaleType": "CENTER_CROP"
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  },
+  "cordova": {}
+}

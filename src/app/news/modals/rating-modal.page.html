@@ -1,0 +1,28 @@
+<div
+  class="ion-page"
+  style="display: flex; flex-direction: column; justify-content: space-between; padding: 12px"
+>
+  <h3 style="margin-top: 12px"><strong>Rate the article</strong></h3>
+  <ion-list lines="none">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <ion-item>
+        <ion-range
+          min="1"
+          max="5"
+          step="1"
+          snaps="true"
+          pin="true"
+          ticks="true"
+          name="rating"
+          [(ngModel)]="ratingScore"
+          default="0"
+          ><ion-label slot="start"><strong>1</strong> </ion-label>
+          <ion-label slot="end"> <strong>5</strong></ion-label></ion-range
+        >
+      </ion-item>
+      <ion-button color="primary" type="submit"
+        >SUBMIT RATING</ion-button
+      >
+    </form>
+  </ion-list>
+</div>

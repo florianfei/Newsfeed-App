@@ -1,0 +1,20 @@
+<ion-app>
+  <ion-menu side="start" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          DigiNewsfeed
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item lines="none" (click)="menuNavigate('/news/history')">History</ion-item>
+        <ion-item lines="none" (click)="menuNavigate('/about')">About</ion-item>
+        <ion-item lines="none" (click)="menuNavigate('/user')">User</ion-item>
+        <ion-item lines="none"><a href="https://sites.google.com/view/diginewsfeed/home">Privacy</a></ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

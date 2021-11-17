@@ -1,0 +1,76 @@
+<ion-content>
+  <ion-slides class="slides-content" [pager]="true" *ngIf="authTokenStored !== undefined && !authTokenStored">
+    <ion-slide>
+      <div class="slide">
+        <ion-img src="assets/icon/news.png" class="digi-logo"></ion-img>
+        <h1>Welcome to using DigiNewsfeed!</h1>
+        <p>
+          Thank you very much for participating in the survey for this study!
+        </p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <ion-img src="assets/icon/news.png" class="digi-logo"></ion-img>
+        <h1>What is DigiNewsfeed?</h1>
+        <p>
+          DigiNewsfeed is an app that displays news articles of different categories for easy reading access.
+          In total, there are five different categories by which you can filter your articles:
+        </p>
+          <p>
+            <strong>Economy, politics, health, climate and entertainment.</strong>
+          </p>
+        <p>This filtering
+          is accessible through the segment buttons just below the toolbar (note that some segment buttons are
+          available via horizontal scrolling).</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <ion-img src="assets/icon/news.png" class="digi-logo"></ion-img>
+        <h1>What about other features?</h1>
+        <p>
+          The app also includes the options to rate and comment on articles.
+        </p>
+        <p>
+          Other information such as the most recently viewed five articles, the assigned user ID and the privacy policy
+          can be accessed via the menu in the top left corner of the toolbar.
+        </p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <ion-img src="assets/icon/news.png" class="digi-logo"></ion-img>
+        <h1>Publishing cycle</h1>
+        <p>
+          New articles will be published every morning; the app will notify you when new articles are released.
+          To manually see and check whether new articles are available, the list of available articles can be refreshed
+          with a pull-down gesture on the content area of the main interface.
+        </p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <h1>Are you ready?</h1>
+        <p>Input the one-time pad provided to you and press the button to get started!</p>
+        <ion-item>
+          <ion-label position="stacked">One-time pad</ion-label>
+          <ion-input name="auth" type="text" [(ngModel)]="otpInput" required></ion-input>
+        </ion-item>
+        <ion-button fill="clear" color="primary" type="button" (click)="onStart($event)">Get started!</ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides class="slides-content" [pager]="false" *ngIf="authTokenStored !== undefined && authTokenStored">
+    <ion-slide>
+      <div class="slide">
+        <ion-img src="assets/icon/news.png" class="digi-logo"></ion-img>
+        <h1>Welcome to using DigiNewsfeed</h1>
+        <p>
+          Thank you very much for participating in the survey for this study!
+        </p>
+        <ion-button fill="clear" color="primary" (click)="onSessionStart($event)">Get started!</ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

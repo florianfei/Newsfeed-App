@@ -1,0 +1,7 @@
+{
+  "name": "DigiNewsfeed",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
